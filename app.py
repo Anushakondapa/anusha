@@ -9,10 +9,10 @@ c=st.number_input('sepal length(cm)')
 d=st.number_input('sepal width(cm)')
 r=''
 if st.button('PREDICT'):
-  result=clf.predict([[a,b,c,d]]).squeeze()
-  if result==0:
+  r=clf.predict([[a,b,c,d]]).squeeze()
+  if r==0:
     st.success('SETOSA')
-  elif result==1:
+  elif r==1:
       st.success('VERSICOLOR')
   else:
     st.success('VIRGINCA')
