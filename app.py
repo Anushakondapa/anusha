@@ -12,7 +12,7 @@ if st.button('PREDICT'):
   result=clf.predict([[a,b,c,d]]).squeeze()
   if result==0:
     st.success('SETOSA')
-  elif result==0:
+  elif result==1:
       st.success('VERSICOLOR')
   else:
     st.success('VIRGINCA')
